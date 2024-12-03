@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/icons/favicon.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>VPING</title>
+</head>
+<body>
+    <div class="wrapper" id="body_wrapper">
+        <header class="header">
+            <div class="container">
+                <section class="header_inner">
+                    <div class="header_top">
+                        <img src="/icons/own_logo.svg">
+                        <nav class="header_nav">
+                            <ul class="nav_list">
+                                <li class="nav_item">
+                                    <a href="#">About</a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#">Features</a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#">Pricing</a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#">Testimonials</a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="log_sign">
+                                <button onclick="reg_log()" id="log_in">Log in</button>
+                                <button onclick="reg_log()" id="sign_in">Sign up</button>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="header_main">
+                        <div class="header_main__text">
+                            <h1>Get access to worlwide content</h1>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
+                            </p>
+                            <h2>Start from <span>$2.99</span> / month</h2>
+                            <button onclick="reg_log()">Get Started</button>
+                            <h3>* 30-Days money back gurantee</h3>
+                        </div>
+                        <div class="header_main__img"></div>
+                    </div>
+                </section>
+                <div class="reg_log_container" id="container">
+                    <div class="form-container sign-up-container">
+                        <form action="#">
+                            <h1>Create Account</h1>
+                            <div class="social-container">
+                                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <span>or use your email for registration</span>
+                            <input type="text" placeholder="Name" />
+                            <input type="email" placeholder="Email" />
+                            <input type="password" placeholder="Password" />
+                            <button>Sign Up</button>
+                        </form>
+                    </div>
+                    <div class="form-container sign-in-container">
+                        <form action="#">
+                            <h1>Sign in</h1>
+                            <div class="social-container">
+                                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <span>or use your account</span>
+                            <input type="email" placeholder="Email" />
+                            <input type="password" placeholder="Password" />
+                            <a href="#">Forgot your password?</a>
+                            <button>Sign In</button>
+                        </form>
+                    </div>
+                    <div class="overlay-container">
+                        <div class="overlay">
+                            <div class="overlay-panel overlay-left">
+                                <h1>Welcome Back!</h1>
+                                <p>To keep connected with us please login with your personal info</p>
+                                <button class="ghost" id="signIn">Sign In</button>
+                            </div>
+                            <div class="overlay-panel overlay-right">
+                                <h1>Hello, Friend!</h1>
+                                <p>Enter your personal details and start journey with us</p>
+                                <button class="ghost" id="signUp">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="main_inner">
+                    <div class="awards">
+                    </div>
+                    <section class="main_top">
+                        <img src="/imgs/laptop.png">
+                        <div class="entartaiment">
+                            <h1>One gateway endless entertainment</h1>
+                            <p>Content at the tip of your fingers! With thousands of servers and millions of IPs, you can access websites and enjoy your favourite movies, TV shows, games, and more; in over 190 countries.</p>
+                            <ul class="streaming_list">
+                                <li class="streaming_item">
+                                    <img src="/icons/netflix.svg" alt="">
+                                </li>
+                                <li class="streaming_item">
+                                    <img src="/icons/youtube.svg" alt="">
+                                </li>
+                                <li class="streaming_item">
+                                    <img src="/icons/prime.svg" alt="">
+                                </li>
+                                <li class="streaming_item">
+                                    <img src="/icons/HBO.svg" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="main_mid1">
+                        <div class="servers">
+                            <h1>Putting power back into your hands</h1>
+                            <p>Instant protection to enhance your online privacy. Browse the internet safety and anonymously.</p>
+                            <button onclick="reg_log()">Get Started</button>
+                        </div>
+                        <img src="/imgs/servers.png">
+                    </section>
+                    <section class="main_mid2">
+                        <img src="/imgs/money.png">
+                        <div class="money">
+                            <h1>30 Days money back guarantee</h1>
+                            <p>Since we trust that you will fall in love with vping, we offer our users the option to try it for 30 days. If you don’t enjoy the experience, we will give you a 100% refund.</p>
+                            <button onclick="reg_log()">Get Started</button>
+                        </div>
+                    </section>
+                    <section class="main_packets">
+                        <h1>Save big with our annual plans</h1>
+                        <p>Sign up and save a ton! No logs. No hidden fees.</p>
+                        <ul class="packet_list">
+                            <li class="packet_item  packet_item_purple">
+                                <div class="packet_h1_purple">Premium Plan</div>
+                                <div class="packet__date">3 Years</div>
+                                <div class="packet_price">$2.99 <span>/ month</span></div>
+                                <h2 class="packet_last_price">$107.55 <del>$537.30</del></h2>
+                                <h3>Build every 3 years</h3>
+                                <ul class="adjustments_list" id="adjustments_list1">
+                                    <li class="adjustments_item  item1">Unlimited bandwitch</li>
+                                    <li class="adjustments_item  item1">Encrypted connection</li>
+                                    <li class="adjustments_item">No traffic logs</li>
+                                    <li class="adjustments_item">Works on all devices</li>
+                                    <li class="adjustments_item">Instant setup</li>
+                                    <li class="adjustments_item">Torrent allowed</li>
+                                </ul>
+                                <button class="packet_list__button" onclick="reg_log()">Subscribe</button>
+                            </li>
+                            <li class="packet_item  packet_item_green">
+                                <div class="packet_h1_green">Popular Plan</div>
+                                <div class="packet__date">1 Years</div>
+                                <div class="packet_price">$7.59 <span>/ month</span></div>
+                                <h2 class="packet_last_price">$92.26 <del>$170.88</del></h2>
+                                <h3>Build every year</h3>
+                                <ul class="adjustments_list" id="adjustments_list2">
+                                    <li class="adjustments_item  item2">Unlimited bandwitch</li>
+                                    <li class="adjustments_item  item2">Encrypted connection</li>
+                                    <li class="adjustments_item  item2">No traffic logs</li>
+                                    <li class="adjustments_item  item2">Works on all devices</li>
+                                    <li class="adjustments_item">Instant setup</li>
+                                    <li class="adjustments_item">Torrent allowed</li>
+                                </ul>
+                                <button class="packet_list__button" onclick="reg_log()">Subscribe</button>
+                            </li>
+                            <li class="packet_item  packet_item_red">
+                                <div class="packet_h1_red">Basic plan</div>
+                                <div class="packet__date">Monthly</div>
+                                <div class="packet_price">$14.99 <span>/ month</span></div>
+                                <h3 id="billed_monthly">billed monthly</h3>
+                                <ul class="adjustments_list" id="adjustments_list3">
+                                    <li class="adjustments_item  item3">Unlimited bandwitch</li>
+                                    <li class="adjustments_item  item3">Encrypted connection</li>
+                                    <li class="adjustments_item  item3">No traffic logs</li>
+                                    <li class="adjustments_item  item3">Works on all devices</li>
+                                    <li class="adjustments_item  item3">Instant setup</li>
+                                    <li class="adjustments_item  item3">Torrent allowed</li>
+                                </ul>
+                                <button class="packet_list__button" onclick="reg_log()">Subscribe</button>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="main__experience">
+                        <div class="main__experience__inner">
+                            <h1>A premium experience</h1>
+                            <ul class="main__experience__pluses_list">
+                                <li class="pluses_item">
+                                    <div id="no_limit"></div>    
+                                    <h1>No Limits</h1>
+                                    <p>Enjoy unlimited data - nothing will stop you!</p>
+                                </li>
+                                <li class="pluses_item">
+                                    <div id="security"></div>    
+                                    <h1>100% Safe</h1>
+                                    <p>All your data is encrypted, keeping you safe!</p>
+                                </li>
+                                <li class="pluses_item">
+                                    <div id="speed"></div>    
+                                    <h1>Fastest VPN</h1>
+                                    <p>HD Streaming with fastest VPN,  no buffering!</p>
+                                </li>
+                                <li class="pluses_item">
+                                    <div id="no_policy"></div>
+                                    <h1>No-Logs Policy</h1>
+                                    <p>Maintain your online privacy and anonymity.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="main__slider">
+                        <div class="main__slider_inner">
+                            <div class="main__slider__own-info">
+                                <h1 class="main__slider_inner-h1">The highest rated VPN</h1>
+                                <p class="main__slider_inner-p">Trusted and loved by our users</p>
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-img"></div>
+                                            <div class="swiper_slide__main-info">
+                                                <p>Since we trust that you will fall in love with vping, we offer our users the option to try it for 30 days. If you don’t enjoy the experience, we will give you a 100% refund. It is a long established fact that a reader will be distracted.</p>
+                                                <ul class="profile-data">
+                                                    <div class="avatar_img-1"></div>
+                                                    <div class="pers_info">
+                                                        <h1 class="nickname">Stupid Zombie</h1>
+                                                        <div class="date_and_stars">
+                                                            <p class="date">Aug 15, 2021</p>
+                                                            <ul class="stars">
+                                                                <li class="gold_star"></li>
+                                                                <li class="gold_star"></li>
+                                                                <li class="gold_star"></li>
+                                                                <li class="gold_star"></li>
+                                                                <li class="white_star"></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-img"></div>
+                                            <div class="swiper_slide__main-info">
+                                                <p>I recently downloaded this VPN app and I have to say I'm disappointed. The connection is slow and often drops, making it difficult to stream or access certain websites. I'll be looking for a different option to meet my security and privacy needs.</p>
+                                                <ul class="profile-data">
+                                                    <div class="avatar_img-2"></div>
+                                                    <div class="pers_info">
+                                                        <h1 class="nickname">Albert Einstein</h1>
+                                                        <div class="date_and_stars">
+                                                            <p class="date">Aug 15, 2021</p>
+                                                            <ul class="stars">
+                                                                <li class="gold_star"></li>
+                                                                <li class="gold_star"></li>
+                                                                <li class="gold_star"></li>
+                                                                <li class="white_star"></li>
+                                                                <li class="white_star"></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-img"></div>
+                                            <div class="swiper_slide__main-info">
+                                                <p>I've been using this VPN app for a few weeks now and I'm really impressed with the speed and reliability. It's easy to use and has helped me stay secure and anonymous while browsing online. Highly recommend!</p>
+                                                <ul class="profile-data">
+                                                    <div class="avatar_img-3"></div>
+                                                    <div class="pers_info">
+                                                        <h1 class="nickname">Donald Trump</h1>
+                                                        <div class="date_and_stars">
+                                                            <p class="date">Aug 15, 2021</p>
+                                                            <ul class="stars">
+                                                                <li class="gold_star"></li>
+                                                                <li class="gold_star"></li>
+                                                                <li class="gold_star"></li>
+                                                                <li class="gold_star"></li>
+                                                                <li class="gold_star"></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <img class="stars__img" src="/imgs/stars.png">
+                        </div>
+                    </section>
+                    <section class="main__quastions">
+                        <div class="main__quastions__inner">
+                            <h1>Questions users are asking</h1>
+                            <ul class="quastions__list">
+                                <li class="quastions_item">
+                                    <div class="label">Which plan is right for me?</div>
+                                    <div class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut accusamus ratione saepe magnam harum iusto quibusdam rem autem esse laborum. Distinctio repudiandae nisi modi nemo eos veritatis autem magni, possimus neque. Ab voluptates nulla laboriosam ex quam ullam esse dolorum! Iusto numquam tenetur assumenda distinctio tempora iure dignissimos quae eaque eius, a reiciendis, quaerat accusamus!</div>
+                                </li>
+                                <li class="quastions_item">
+                                    <div class="label">What if I change my mind?</div>
+                                    <div class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda sapiente distinctio repellat? Iusto quis veritatis blanditiis itaque error sequi doloremque tempora neque non cumque!</div>
+                                </li>
+                                <li class="quastions_item">
+                                    <div class="label">How can I manage my billing</div>
+                                    <div class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore a rerum dolor voluptate exercitationem expedita.</div>
+                                </li>
+                                <li class="quastions_item">
+                                    <div class="label">Can I use my account on multiple devices?</div>
+                                    <div class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, neque blanditiis consectetur fugit rem voluptates modi qui atque commodi fuga maxime unde consequatur repellendus incidunt officia similique reprehenderit enim voluptatem reiciendis quod cupiditate debitis nobis? Eius natus totam repudiandae reiciendis voluptatem eos esse.</div>
+                                </li>
+                                <li class="quastions_item">
+                                    <div class="label">How does your pricing work?</div>
+                                    <div class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis distinctio reiciendis aspernatur voluptatibus aliquid debitis cumque quis est, magnam earum laudantium sunt eaque, minima blanditiis nostrum dignissimos laborum, illum excepturi.</div>
+                                </li>
+                                <li class="quastions_item">
+                                    <div class="label">Can I change my plan?</div>
+                                    <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam pariatur sequi, hic sed tempora maiores fugiat, omnis laudantium iusto dolorem reprehenderit.</div>
+                                </li>
+                                <li class="quastions_item">
+                                    <div class="label">What payment methods do you accept?</div>
+                                    <div class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore a rerum dolor voluptate exercitationem expedita.</div>
+                                </li>
+                                <li class="quastions_item">
+                                    <div class="label">What is the 30-days money back policy?</div>
+                                    <div class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore a rerum dolor voluptate exercitationem expedita.</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="line_1"></div>
+                <div class="line_2"></div>
+                <div class="line_3"></div>
+                <div class="footer__inner">
+                    <section class="footer_top">
+                        <img src="/imgs/PC.png">
+                        <div class="footer_top__main-info">
+                            <h1>Get what you need online, completely undetected.</h1>
+                            <p>30 Day money back guarantee. If you’re not 100% satisfied with vping. We’ll refund your payment. No hassle, no risk.</p>
+                            <ul class="footer_top_t_star">
+                                <li><img src="/icons/footer_trustp.svg"></li>
+                                <li class="footer_star"><img src="/icons/footer_stars.svg"></li>
+                            </ul>
+                            <p class="footer_price">Start from <span>$2.99</span> / month</p>
+                            <button onclick="reg_log()">Get Started</button>
+                        </div>
+                    </section>
+                    <section class="footer_bottom">
+                        <ul class="footer_bottom-list">
+                            <li class="footer_bottom-item">
+                                <img src="/icons/footer_logo.svg">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            </li>
+                            <li class="footer_bottom-item">
+                                <h1>Product</h1>
+                                <ul class="product_list">
+                                    <li class="product_item">Download</li>
+                                    <li class="product_item">Pricing</li>
+                                    <li class="product_item">Server</li>
+                                    <li class="product_item">VPN for Business</li>
+                                    <li class="product_item">VPN for Non-Profit</li>
+                                </ul>
+                            </li>
+                            <li class="footer_bottom-item">
+                                <h1>Company</h1>
+                                <ul class="company_list">
+                                    <li class="company_item">What’s is VPN?</li>
+                                    <li class="company_item">FAQ</li>
+                                    <li class="company_item">Tuitorials</li>
+                                    <li class="company_item">About us</li>
+                                    <li class="company_item">Privacy Policy</li>
+                                </ul>
+                            </li>
+                            <li class="footer_bottom-item">
+                                <h1>Connect with us</h1>
+                                <ul class="social_list">
+                                    <li class="social-item"><a href="#"><img src="/icons/Facebook.svg"></a></li>
+                                    <li class="social-item"><a href="#"><img src="/icons/Twitter.svg"></a></li>
+                                    <li class="social-item"><a href="#"><img src="/icons/Instagram.svg"></a></li>
+                                    <li class="social-item"><a href="#"><img src="/icons/Linkedin.svg"></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="/main.js"></script>
+</body>
+</html>
